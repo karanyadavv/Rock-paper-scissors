@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Rock Paper Scissors</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+      <div class="header">
+        <div class="rectangle-container">
+          <div class="names">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p class="scissors">SCISSORS</p>
+          </div>
+          <div class="score">
+            <div class="player-score">
+              <p class="player-label">
+                PLAYER
+              </p>
+              <span class="player-score-counter style-player-sc-c"></span>
+            </div>
+            <div class="computer-score">
+            <p class="computer-label">
+              COMPUTER
+            </p>
+            <span class="computer-score-counter style-computer-sc-c"></span>
+            </div>
+            <div class="ties-score">
+              <p class="ties-label">
+                TIES
+              </p>
+              <span class="ties-score-counter style-ties-sc-c"></span>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="playing-area">
+
+        <div class="player-move-area">
+          <div class="you-picked">
+            <p class="p-you-picked">YOU PICKED</p>
+            <div class="player-move-icontainer">
+              <img src="icons/scissors.png" class="player-icon">
+            </div> 
+          </div>
+        </div>
+        <div class="move-area">
+          <p class="js-result result-css"></p>
+          <div class="all-buttons">
+            <button onclick="playGame('rock');">      
+              ROCK
+            </button>
+      
+            <button onclick="playGame('paper');">
+              PAPER
+            </button>
+      
+            <button onclick="playGame('scissors');">
+              SCISSORS
+            </button>
+          </div>
+        </div>
+        <div class="computer-move-area">
+          <div class="computer-picked">
+            <p class="p-computer-picked">THE COMPUTER PICKED</p>
+            <div class="computer-move-icontainer">
+              <img src="icons/rock.png" class="computer-icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="js-move"></p>
+        <button>RULES</button>
+
+        <button onclick="
+        wins.counter = 0;
+        losses.counter = 0;
+        ties.counter = 0;
+        localStorage.removeItem('wins');
+        localStorage.removeItem('losses');
+        localStorage.removeItem('ties');
+        updateWins();
+        updateLosses();
+        updateTies();
+      ">RESET SCORE
+      </button>
+
+      </div>
+
+
+      <script src="script.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,193 @@
+body{
+    background-color: #1c2849;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+
+
+.rectangle-container{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #354763;
+    border-radius: 5px;
+    margin-left: 25%;
+    gap: 260px;
+    padding-right: 10px;
+}
+
+.names p{
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+.scissors{
+    padding-bottom: 20px;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.player-score, .computer-score, .ties-score{
+    background-color: white;
+    color: #1c2849;
+    height: 80px;
+    width: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player-label, .computer-label, .ties-label{
+    font-size: 13px;
+    color: #7386d5;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.style-player-sc-c, .style-computer-sc-c, .style-ties-sc-c{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+/*Header portion ends here*/
+
+
+.playing-area{
+
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.move-area{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 20px;
+
+}
+
+.player-move-area{
+
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-move-area{
+
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-icon, .player-icon{
+    padding-left: 22%;;
+    padding-top: 28%;
+    height: auto;
+    width: 80px;
+}
+
+
+.computer-move-icontainer, .player-move-icontainer{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.player-move-icontainer{
+    border: 25px solid #eca820;
+    box-shadow: inset 0px 4px 4px 0px #bfbfbf, 0px 4px 4px 0px #c16a1b;
+
+}
+
+.computer-move-icontainer{
+    border: 25px solid #526df4;
+    box-shadow: inset 0px 4px 4px 0px #bfbfbf, 0px 4px 4px 0px #293a84;
+}
+
+
+
+.p-computer-picked, .p-you-picked{
+    text-align: center;
+    font-weight: bold;
+}
+/*Move icons end here*/
+
+/*Button area starts here*/
+
+.all-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    gap: 20px;
+}
+
+.move-area button{
+    height: 35px;
+    width: 200px;
+    color: #1c2849;
+    background-color: white;
+    border: 1px solid #e8e8ec;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+}
+
+.move-area button:active{
+    transform: scale(0.95);
+}
+
+.result-css{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    overflow: hidden;
+    height: 40px;
+    text-align: center;
+}
+
+/*Footer starts here*/
+
+.footer{
+    display: flex;
+    margin-left: 60%;
+    gap: 10px;
+}
+.footer button{
+    font-size: 12px;
+    height: 35px;
+    width: auto;
+    padding: 0px 20px 0 20px;
+    color: white;
+    background-color: #192345;
+    border: 2px solid #354763;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer button:active{
+    transform: scale(0.95);
+}
