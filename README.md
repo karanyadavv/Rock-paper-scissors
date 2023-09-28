@@ -9,4 +9,4 @@ Play the classic game of Rock, Paper, Scissors right in your browser. Test your 
 
 Try it out and relive the fun of this timeless game! For Live Link click here.
 
-![Game Screenshot](/screen-grab.png)
+![Game Screenshot](./screen-grab.png)
