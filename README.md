@@ -7,6 +7,6 @@ Play the classic game of Rock, Paper, Scissors right in your browser. Test your 
 - Realistic animations
 - Score tracking with local storage
 
-Try it out and relive the fun of this timeless game! For Live Link click here.
+Try it out and relive the fun of this timeless game! For Live Link click [here](https://karanyadavv.github.io/Rock-paper-scissors/).
 
 ![Game Screenshot](./screen-grab.PNG)
